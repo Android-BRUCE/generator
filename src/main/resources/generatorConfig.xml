@@ -40,11 +40,62 @@
             <!--<property name="enableSubPackages" value="true" />-->
         <!--</javaClientGenerator>-->
         <javaClientGenerator type="XMLMAPPER"
-        targetPackage="com.EItems.dao" implementationPackage="com.EItems.mapper"  targetProject=".\src\main">
+        targetPackage="com.EItems.dao" implementationPackage="com.EItems.mapper"  targetProject=".\src">
         <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
         <!-- 要生成哪些表 -->
-        <table tableName="user" domainObjectName="user"
+        <table tableName="tb_content" domainObjectName="tb_content"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+
+        <table tableName="tb_content_category" domainObjectName="tb_content_category"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+        <table tableName="tb_item" domainObjectName="tb_item"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+        <table tableName="tb_item_cat" domainObjectName="tb_item_cat"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+        <table tableName="tb_itme_desc" domainObjectName="tb_itme_desc"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+        <table tableName="tb_item_param" domainObjectName="tb_item_param"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+        <table tableName="tb_itme_param_item" domainObjectName="tb_itme_param_item"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+        <table tableName="tb_order" domainObjectName="tb_order"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+        <table tableName="tb_order_item" domainObjectName="tb_order_item"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+        <table tableName="tb_order_shipping" domainObjectName="tb_order_shipping"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+        </table>
+        <table tableName="tb_user" domainObjectName="tb_user"
                enableCountByExample="true" enableUpdateByExample="true"
                enableDeleteByExample="true" enableSelectByExample="true"
                selectByExampleQueryId="true">
